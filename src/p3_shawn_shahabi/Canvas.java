@@ -222,10 +222,13 @@ public class Canvas extends JPanel implements MouseListener, MouseMotionListener
                 birdY = maxY - birdSize - 100;
             }
 
+            //Adds game over message
             g2D.setColor(Color.orange);
             g2D.setFont(gameFont);
             g2D.drawString("Game Over", maxX / 3, maxY / 2);
         }
+        
+        //Displays score
         g2D.setColor(Color.white);
         g2D.setFont(gameFont);
         g2D.drawString("" + score, maxX / 2 - 40, 80);
